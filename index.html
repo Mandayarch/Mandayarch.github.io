@@ -11,6 +11,10 @@
       background-size: cover;
       background-position: center center;
       background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
     }
     h1 {
       text-align: center;
@@ -20,13 +24,34 @@
     }
     /* Position for the second paragraph (a bit lower, to the left) */
     .p2 {
-      top: 30%; /* Adjust as needed */
-      left: 20%; /* Adjust as needed */
+      top: 30%;
+      left: 20%;
     }
     /* Position for the third paragraph (below the second one, a little to the right) */
     .p3 {
-      top: 45%; /* Adjust as needed */
-      left: 60%; /* Adjust as needed */
+      top: 45%;
+      left: 60%;
+    }
+    /* Style for the button */
+    .button-container {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 20px;
+    }
+    .button {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: rgba(255, 255, 255, 1);
     }
   </style>
 </head>
@@ -36,6 +61,11 @@
 <p>She first appeared terrifying and mysterious, seemingly out of nowhere.</p>
 <p class="p2">She hated everyone, she wished the worst, she drove one to such dread.</p>
 <p class="p3">She'd be mean, yell and bully, throw mean and painful words.</p>
+
+<!-- Button at the bottom -->
+<div class="button-container">
+  <a href="nextpage.html" class="button">noon</a>
+</div>
 
 </body>
 </html>
