@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DawnV</title>
+  <style>
+    body {
+      position: relative;
+      height: 100vh;
+      margin: 0;
+      background-image: url('https://raw.githubusercontent.com/Mandayarch/Mandayarch.github.io/main/imagess/dawnset.png'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      position: absolute;
+    }
+    /* Position for the second paragraph (a bit lower, to the left) */
+    .p2 {
+      top: 30%;
+      left: 20%;
+    }
+    /* Position for the third paragraph (below the second one, a little to the right) */
+    .p3 {
+      top: 45%;
+      left: 60%;
+    }
+    /* Style for the button */
+    .button-container {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 20px;
+    }
+    .button {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Noon</h1>
+<p>She then protected and told whats right and whats wrong.</p>
+<p class="p2">She came with wise words and smart remarks</p>
+<p class="p3">less mean and more guiding that no one matters but us.</p>
+
+<!-- Button at the bottom -->
+<div class="button-container">
+  <a href="nextpage.html" class="button">Dusk</a>
+</div>
+
+</body>
+</html>
