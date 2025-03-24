@@ -16,7 +16,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: black;
+      color: black !important; /* Force black text */
       text-align: center;
       overflow: hidden;
     }
@@ -24,6 +24,7 @@
     h1 {
       font-size: 4rem;
       margin-bottom: 2rem;
+      color: black !important; /* Ensure h1 is black */
     }
 
     p {
@@ -32,6 +33,7 @@
       font-size: 1.2rem;
       margin: 1rem 0;
       position: absolute;
+      color: black !important; /* Force black paragraphs */
     }
 
     .p2 {
@@ -55,7 +57,7 @@
 
     .button {
       background-color: rgba(0, 0, 0, 0.7);
-      color: black;
+      color: white !important; /* Ensure button text is white */
       border: 2px solid white;
       padding: 12px 24px;
       font-size: 18px;
@@ -68,7 +70,7 @@
 
     .button:hover {
       background-color: rgba(255, 255, 255, 0.9);
-      color: black;
+      color: black !important; /* Ensure hover text is black */
     }
 
     @media (max-width: 768px) {
@@ -92,5 +94,3 @@
 
 </body>
 </html>
-
-
