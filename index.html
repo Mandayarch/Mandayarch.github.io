@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DawnV</title>
   <style>
     body {
-      position: relative;
       height: 100vh;
       margin: 0;
-      background-image: url('https://raw.githubusercontent.com/Mandayarch/Mandayarch.github.io/main/imagess/dawnset.png'); /* Replace with your image URL */
+      padding: 0;
+      box-sizing: border-box;
+      background: url('https://raw.githubusercontent.com/Mandayarch/Mandayarch.github.io/main/imagess/dawnset.png') no-repeat center center fixed;
       background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
     }
+
     h1 {
-      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 2rem;
     }
+
     p {
-      position: absolute;
+      max-width: 80%;
+      line-height: 1.6;
+      font-size: 1.2rem;
+      margin: 1rem 0;
     }
-    /* Position for the second paragraph (a bit lower, to the left) */
+
     .p2 {
-      top: 30%;
-      left: 20%;
+      align-self: flex-start;
+      margin-left: 5%;
     }
-    /* Position for the third paragraph (below the second one, a little to the right) */
+
     .p3 {
-      top: 45%;
-      left: 60%;
+      align-self: flex-end;
+      margin-right: 5%;
     }
-    /* Style for the button */
+
     .button-container {
-      width: 100%;
-      text-align: center;
-      position: fixed; /* Ensures it stays at the bottom */
+      position: absolute;
       bottom: 20px;
-      left: 0;
+      text-align: center;
+      width: 100%;
     }
+
     .button {
-      background-color: rgba(0, 0, 0, 0.7); /* Darker background for visibility */
+      background-color: rgba(0, 0, 0, 0.7);
       color: white;
       border: 2px solid white;
       padding: 12px 24px;
@@ -50,25 +60,32 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
+      transition: background-color 0.3s, color 0.3s;
     }
+
     .button:hover {
       background-color: rgba(255, 255, 255, 0.9);
       color: black;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      p { font-size: 1rem; }
+      .p2, .p3 { align-self: center; text-align: center; margin: 0; }
     }
   </style>
 </head>
 <body>
 
-<h1>Dawn</h1>
-<p>She first appeared terrifying and mysterious, seemingly out of nowhere.</p>
-<p class="p2">She hated everyone, she wished the worst, she drove one to such dread.</p>
-<p class="p3">She'd be mean, yell and bully, throw mean and painful words.</p>
+  <h1>Dawn</h1>
+  <p>She first appeared terrifying and mysterious, seemingly out of nowhere.</p>
+  <p class="p2">She hated everyone, she wished the worst, she drove one to such dread.</p>
+  <p class="p3">She'd be mean, yell and bully, throw mean and painful words.</p>
 
-<!-- Button at the bottom -->
-<div class="button-container">
-  <a href="https://mandayarch.github.io/Indexnoon.html" class="button">Noon</a>
-</div>
+  <!-- Button at the bottom -->
+  <div class="button-container">
+    <a href="https://mandayarch.github.io/Indexnoon.html" class="button">Noon</a>
+  </div>
 
 </body>
 </html>
